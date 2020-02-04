@@ -33,11 +33,11 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.collider.tag == "Ground")
         {
-            Debug.Log("on ground");
+            //Debug.Log("on ground");
             isGrounded = true;
             if (Input.GetKey(KeyCode.W) && isGrounded == true)
             {
-                Debug.Log("w press");
+                //Debug.Log("w press");
                 rd2d.AddForce(new Vector2(0, 3), ForceMode2D.Impulse);
                 isGrounded = false;
             }
