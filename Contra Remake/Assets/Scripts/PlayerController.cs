@@ -6,7 +6,9 @@ public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody2D rd2d;
+    private bool isGrounded;
     public float speed;
+
 
     void Start()
     {
@@ -31,9 +33,13 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.collider.tag == "Ground")
         {
-            if (Input.GetKey(KeyCode.W))
+            Debug.Log("on ground");
+            isGrounded = true;
+            if (Input.GetKey(KeyCode.W) && isGrounded == true)
             {
+                Debug.Log("w press");
                 rd2d.AddForce(new Vector2(0, 3), ForceMode2D.Impulse);
+                isGrounded = false;
             }
         }
     }
