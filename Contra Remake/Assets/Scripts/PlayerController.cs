@@ -9,6 +9,15 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     public float speed;
 
+	public GameObject shot;
+	 public Transform shotSpawn;
+	 public float fireRate;
+	 public AudioSource musicSource;
+
+	 private float nextFire;
+
+     private Rigidbody rb;
+
 
     void Start()
     {
@@ -18,8 +27,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerMovement();
-    }
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
+		{
+			nextFire = Time.time + fireRate;
+			Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+			GetComponent<AudioSource>().Play ();
+        }
+		PlayerMovement();
+	}
 
     //======Function==========
     void PlayerMovement()
