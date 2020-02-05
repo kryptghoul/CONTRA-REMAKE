@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.W) && isGrounded == true)
             {
                 //Debug.Log("w press");
-                rd2d.AddForce(new Vector2(0, 3), ForceMode2D.Impulse);
+                rd2d.AddForce(new Vector2(0, 5), ForceMode2D.Impulse);
                 isGrounded = false;
             }
         }
