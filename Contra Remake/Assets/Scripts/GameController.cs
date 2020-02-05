@@ -9,19 +9,19 @@ public class GameController : MonoBehaviour
 	public AudioClip musicClipTwo;
 	public AudioClip musicClipThree;
 
-	public Text winText;
+	/*public Text winText;
 	public Text livesText;
 
-	private int lives;
+	private int lives;*/
 
 	void Start ()
 	{
-		lives = 3;
+		/*lives = 3;
 		winText.text = "";
-		SetLivesText ();
+		SetLivesText ();*/
 	}
 
-	private void OnCollisionEnter2D(Collision2D collision)
+	/*private void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (collision.collider.tag == "Enemy")
 		{
@@ -42,5 +42,5 @@ public class GameController : MonoBehaviour
 			musicSource.clip = musicClipThree;
 			musicSource.Play();
 		}
-	}
+	}*/
 }
