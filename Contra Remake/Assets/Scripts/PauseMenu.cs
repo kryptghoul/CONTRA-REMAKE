@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-
+    public static bool winLoseCondition = false;
     public GameObject pauseMenuUI;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && winLoseCondition == false)
         {
             if (GameIsPaused)
             {
@@ -47,5 +47,11 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("quitting game");
         Application.Quit();
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f; //unfreeze the game
+        SceneManager.LoadScene("ContraGameLevel");
     }
 }

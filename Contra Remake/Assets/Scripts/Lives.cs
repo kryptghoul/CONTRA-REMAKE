@@ -9,9 +9,13 @@ public class Lives : MonoBehaviour
     public Text winText;
     public Text livesText;
     public Text levelText;
+    public GameObject winScreen;
+    public GameObject loseScreen;
     private int lives;
     private int level;
     private int score;
+
+    private PauseMenu pauseMenuScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,9 +60,11 @@ public class Lives : MonoBehaviour
         livesText.text = "Lives: " + lives.ToString();
         if (lives == 0)
         {
-            Object.Destroy(gameObject);
-            winText.text = "You Lose!";
-            
+            loseScreen.SetActive(true);
+            //Object.Destroy(gameObject);
+            PauseMenu.winLoseCondition = true;
+            Time.timeScale = 0f; //freeze the game
+            //winText.text = "You Lose!";
         }
     }
 

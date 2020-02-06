@@ -48,8 +48,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
+  - name: Water
     uniqueID: 1747184471
+    locked: 0
+  - name: Player
+    uniqueID: 1780717731
     locked: 0
   - name: Enemy
     uniqueID: 3018232089
