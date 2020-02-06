@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class DestroyByBoundary : MonoBehaviour
 {
-    void OnTriggerExit(Collider other) //anything that leave the box get destroyed
+    /*void OnTriggerExit(Collider other) //anything that leave the box get destroyed
     {
         Destroy(other.gameObject);
+    }*/
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Bullet")
+        {
+            Destroy(collision.collider.gameObject);
+        }
     }
 }

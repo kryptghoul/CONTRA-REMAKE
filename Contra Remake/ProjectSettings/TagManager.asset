@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Bullet
   - Boss
+  - lvl1BossStart
+  - lvl2BossStart
+  - lvl1Slider
   layers:
   - Default
   - TransparentFX

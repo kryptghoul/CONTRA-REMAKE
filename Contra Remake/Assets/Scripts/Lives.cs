@@ -41,11 +41,13 @@ public class Lives : MonoBehaviour
         }
         if (collision.collider.tag == "Boss")
         {
-            collision.gameObject.SetActive(false);
+            lives = lives - 1;
+            livesText.text = lives.ToString();
+            //collision.gameObject.SetActive(false);
             //code below not gonna be in this if function once the bullet work
-            level = level + 1;
+            /*level = level + 1;
             levelText.text = "Level: " + level.ToString();
-            transform.position = new Vector2(-4.0f, -0.8f);
+            transform.position = new Vector2(-4.0f, -0.8f);*/
         }
     }
 

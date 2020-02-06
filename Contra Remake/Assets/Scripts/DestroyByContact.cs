@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DestroyByContact : MonoBehaviour
 {
-    //private Rigidbody2D rd2d;
+    private BossController BossController;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +31,10 @@ public class DestroyByContact : MonoBehaviour
             //collision.gameObject.SetActive(false);
             Destroy(gameObject);
         }
+
+        /*if (collision.collider.tag == "Boss")
+        {
+            transform.position = new Vector2(-4f, -0.7f);
+        }*/
     }
 }
