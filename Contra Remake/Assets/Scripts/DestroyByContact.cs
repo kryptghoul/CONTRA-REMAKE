@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,12 +23,13 @@ public class DestroyByContact : MonoBehaviour
         Destroy(other.gameObject);
         Destroy(gameObject);
     }
-    /*private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Enemy")
         {
             Destroy(collision.collider.gameObject);
             //collision.gameObject.SetActive(false);
+            Destroy(gameObject);
         }
-    }*/
+    }
 }
