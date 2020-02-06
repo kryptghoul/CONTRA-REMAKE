@@ -8,15 +8,18 @@ public class Lives : MonoBehaviour
 
     public Text winText;
     public Text livesText;
-
+    public Text levelText;
     private int lives;
+    private int level;
 
     // Start is called before the first frame update
     void Start()
     {
+        level = 1;
         lives = 5;
         winText.text = "";
         SetLivesText();
+        SetLevelText();
     }
 
     // Update is called once per frame
@@ -46,5 +49,10 @@ public class Lives : MonoBehaviour
             winText.text = "You Lose!";
             
         }
+    }
+
+    private void SetLevelText()
+    {
+        levelText.text = "Level: " + level.ToString();
     }
 }

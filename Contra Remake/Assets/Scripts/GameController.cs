@@ -9,12 +9,12 @@ public class GameController : MonoBehaviour
 	public AudioClip musicClipTwo;
 	public AudioClip musicClipThree;
 
-	/*public Text winText;
-	public Text livesText;
+    /*public Text winText;
+	
 
 	private int lives;*/
 
-	void Start ()
+    void Start ()
 	{
 		/*lives = 3;
 		winText.text = "";
