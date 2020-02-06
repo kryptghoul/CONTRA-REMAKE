@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class DestroyByContact : MonoBehaviour
 {
-    private Rigidbody2D rd2d;
+    //private Rigidbody2D rd2d;
     // Start is called before the first frame update
     void Start()
     {
-        rd2d = GetComponent<Rigidbody2D>();
+        //rd2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -17,12 +17,17 @@ public class DestroyByContact : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
+        Destroy(gameObject);
+    }
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Enemy")
         {
             Destroy(collision.collider.gameObject);
             //collision.gameObject.SetActive(false);
         }
-    }
+    }*/
 }

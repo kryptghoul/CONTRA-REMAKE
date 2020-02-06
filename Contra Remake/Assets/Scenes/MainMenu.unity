@@ -982,7 +982,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Game  Project  for  DIG4715C  class.
+
+    Artist:
+
+    Coder:
+
+    Tech: Hanniee  Tran'
 --- !u!222 &860237043
 CanvasRenderer:
   m_ObjectHideFlags: 0

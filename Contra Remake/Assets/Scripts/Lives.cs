@@ -11,12 +11,13 @@ public class Lives : MonoBehaviour
     public Text levelText;
     private int lives;
     private int level;
-
+    private int score;
     // Start is called before the first frame update
     void Start()
     {
         level = 1;
         lives = 5;
+        score = 0;
         winText.text = "";
         SetLivesText();
         SetLevelText();
@@ -37,6 +38,14 @@ public class Lives : MonoBehaviour
             //Destroy(collision.collider.gameObject);
             //collision.gameObject.SetActive(false);
             SetLivesText();
+        }
+        if (collision.collider.tag == "Boss")
+        {
+            collision.gameObject.SetActive(false);
+            //code below not gonna be in this if function once the bullet work
+            level = level + 1;
+            levelText.text = "Level: " + level.ToString();
+            transform.position = new Vector2(-4.0f, -0.8f);
         }
     }
 
