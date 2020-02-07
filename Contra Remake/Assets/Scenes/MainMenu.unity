@@ -984,9 +984,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Game  Project  for  DIG4715C  class.
 
-    Artist:
+    Artist:Kaylie White
 
-    Coder:
+    Coder:Joshua Bonilla
 
     Tech: Hanniee  Tran'
 --- !u!222 &860237043
@@ -1429,7 +1429,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Use  A/w/s/d  to  move.  Left  mouse   to  fire.
+  m_Text: 'Use  A/w/s/d  to  move.  Left  mouse   to  fire.
+
+    Finish  both  level  to  win.'
 --- !u!222 &1560907400
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1767,7 +1769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9150943, g: 0.6402867, b: 0.21150766, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
