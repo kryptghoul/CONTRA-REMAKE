@@ -53,6 +53,11 @@ public class Lives : MonoBehaviour
             levelText.text = "Level: " + level.ToString();
             transform.position = new Vector2(-4.0f, -0.8f);*/
         }
+		if (collision.collider.tag == "EB")
+		{
+			lives = lives - 1;
+            livesText.text = lives.ToString();
+		}
     }
 
     private void SetLivesText()

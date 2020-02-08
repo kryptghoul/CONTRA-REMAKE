@@ -8,13 +8,10 @@ public class WeaponController : MonoBehaviour
 	public Transform shotSpawn;
 	public float fireRate;
 	public float delay;
-	
-	private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource> ();
 		InvokeRepeating ("Fire", delay, fireRate);
     }
 
@@ -22,6 +19,5 @@ public class WeaponController : MonoBehaviour
     void Fire()
     {
         Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
-		audioSource.Play ();
     }
 }

@@ -11,6 +11,7 @@ TagManager:
   - lvl1BossStart
   - lvl2BossStart
   - lvl1Slider
+  - EB
   layers:
   - Default
   - TransparentFX
