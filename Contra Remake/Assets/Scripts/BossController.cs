@@ -12,8 +12,9 @@ public class BossController : MonoBehaviour
     public GameObject winScreen;
     public bool boss1;
     public bool boss2;
-
-    private bool boss1Died;
+    public GameObject playerBullet;
+    public bool boss1Died;
+    //public bool boss2Start;
     //public int bossDamage;
 
     private Lives playerLive;
@@ -21,6 +22,7 @@ public class BossController : MonoBehaviour
     void Start()
     {
         boss1Died = false;
+        //boss2Start = false;
     }
 
     // Update is called once per frame
@@ -28,7 +30,7 @@ public class BossController : MonoBehaviour
     {
         healthBar.value = bossHealth;
     }
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Bullet") && boss1 == true)
@@ -65,6 +67,7 @@ public class BossController : MonoBehaviour
 
     void BossDead()
     {
+        //Physics2D.IgnoreLayerCollision(30, 31, false);
         Destroy(objectToDisable);
         Destroy(gameObject);
     }

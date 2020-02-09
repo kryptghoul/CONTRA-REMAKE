@@ -47,6 +47,7 @@ public class Lives : MonoBehaviour
         {
             lives = lives - 1;
             livesText.text = lives.ToString();
+            SetLivesText();
             //collision.gameObject.SetActive(false);
             //code below not gonna be in this if function once the bullet work
             /*level = level + 1;

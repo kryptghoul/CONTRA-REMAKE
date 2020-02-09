@@ -12,6 +12,7 @@ TagManager:
   - lvl2BossStart
   - lvl1Slider
   - EB
+  - lvl2Slider
   layers:
   - Default
   - TransparentFX
@@ -21,9 +22,6 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - Background
-  - Ground
   - 
   - 
   - 
@@ -45,6 +43,9 @@ TagManager:
   - 
   - 
   - 
+  - Boss2
+  - Bullet
+  - BossBodyCollide
   m_SortingLayers:
   - name: Default
     uniqueID: 0

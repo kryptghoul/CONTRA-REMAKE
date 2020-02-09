@@ -32,9 +32,5 @@ public class DestroyByContact : MonoBehaviour
             Destroy(gameObject);
         }
 
-        /*if (collision.collider.tag == "Boss")
-        {
-            transform.position = new Vector2(-4f, -0.7f);
-        }*/
     }
 }
