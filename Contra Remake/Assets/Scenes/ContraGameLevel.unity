@@ -2371,15 +2371,14 @@ GameObject:
   m_Component:
   - component: {fileID: 123597218}
   - component: {fileID: 123597221}
-  - component: {fileID: 123597220}
   - component: {fileID: 123597219}
-  m_Layer: 29
+  m_Layer: 31
   m_Name: lvl2bossCollidePlayer
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &123597218
 Transform:
   m_ObjectHideFlags: 0
@@ -2415,22 +2414,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!58 &123597220
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123597217}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.76, y: 0.39}
-  serializedVersion: 2
-  m_Radius: 0.83
 --- !u!61 &123597221
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2444,7 +2427,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.74, y: -0.15}
+  m_Offset: {x: 5.88, y: 1.48}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2455,7 +2438,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.17, y: 0.71}
+  m_Size: {x: 2.66, y: 4.41}
   m_EdgeRadius: 0
 --- !u!1 &150153727
 GameObject:
@@ -4424,6 +4407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e4b16c3f7663e44b69e728b7e4d85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boss1Died: 0
 --- !u!1 &563976260
 GameObject:
   m_ObjectHideFlags: 0
@@ -6737,7 +6721,7 @@ MonoBehaviour:
   boss2: 1
   playerBullet: {fileID: 7910716764742055444, guid: bd82e97f0c56afc44957bc60d966eb6e,
     type: 3}
-  boss1Died: 1
+  isDead: 0
 --- !u!50 &859187962
 Rigidbody2D:
   serializedVersion: 4
@@ -7171,7 +7155,7 @@ MonoBehaviour:
   boss2: 0
   playerBullet: {fileID: 7910716764742055444, guid: bd82e97f0c56afc44957bc60d966eb6e,
     type: 3}
-  boss1Died: 0
+  isDead: 0
 --- !u!61 &933323335
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7409,7 +7393,7 @@ MonoBehaviour:
   boss1: 0
   boss2: 1
   playerBullet: {fileID: 0}
-  boss1Died: 0
+  isDead: 0
 --- !u!50 &1001621620
 Rigidbody2D:
   serializedVersion: 4
@@ -20933,7 +20917,7 @@ MonoBehaviour:
   boss1: 1
   boss2: 0
   playerBullet: {fileID: 878861249}
-  boss1Died: 0
+  isDead: 0
 --- !u!61 &1777355284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22806,6 +22790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e4b16c3f7663e44b69e728b7e4d85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boss1Died: 0
 --- !u!1 &2012188414
 GameObject:
   m_ObjectHideFlags: 0

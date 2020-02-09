@@ -13,16 +13,19 @@ public class BossController : MonoBehaviour
     public bool boss1;
     public bool boss2;
     public GameObject playerBullet;
-    public bool boss1Died;
+
+    public bool isDead;
     //public bool boss2Start;
     //public int bossDamage;
-
+    private IgnoreLayerScript ignore;
     private Lives playerLive;
     // Start is called before the first frame update
     void Start()
     {
-        boss1Died = false;
+        ignore = GetComponent<IgnoreLayerScript>();
+        //boss1Died = false;
         //boss2Start = false;
+        isDead = false;
     }
 
     // Update is called once per frame
@@ -56,7 +59,10 @@ public class BossController : MonoBehaviour
         }
         if (bossHealth == 0 && boss1 == true)
         {
-            boss1Died = true;
+            //ignore.boss1Died == true;
+            //IgnoreLayerScript.boss1Died = true;
+            isDead = true;
+            Debug.Log("Boss1Died");
             //GameObject.FindGameObjectsWithTag("Player").transform.position = new Vector2(-4f, -0.7f);
             //player.transform.position = new Vector2(-4f, -0.7f);
 
@@ -64,6 +70,8 @@ public class BossController : MonoBehaviour
             teleportPlayer();
         }
     }
+
+
 
     void BossDead()
     {

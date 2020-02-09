@@ -73,7 +73,6 @@
     <Compile Include="Assets\Scripts\EnemyGFX.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Scripts\IgnoreBoss2.cs" />
     <Compile Include="Assets\Scripts\IgnoreLayerScript.cs" />
     <Compile Include="Assets\Scripts\Lives.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
