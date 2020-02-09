@@ -57,7 +57,8 @@ public class Lives : MonoBehaviour
 		{
 			lives = lives - 1;
             livesText.text = lives.ToString();
-		}
+            SetLivesText();
+        }
     }
 
     private void SetLivesText()

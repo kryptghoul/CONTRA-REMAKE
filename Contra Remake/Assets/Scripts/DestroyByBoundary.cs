@@ -14,5 +14,9 @@ public class DestroyByBoundary : MonoBehaviour
         {
             Destroy(collision.collider.gameObject);
         }
+        if (collision.collider.tag == "EB")
+        {
+            Destroy(collision.collider.gameObject);
+        }
     }
 }
