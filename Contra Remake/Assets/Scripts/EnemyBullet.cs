@@ -18,4 +18,6 @@ public class EnemyBullet : MonoBehaviour
     {
         Destroy(gameObject, 1);
     }
+
+    
 }

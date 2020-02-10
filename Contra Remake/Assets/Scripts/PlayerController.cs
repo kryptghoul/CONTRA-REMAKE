@@ -30,4 +30,12 @@ public class PlayerController : MonoBehaviour
 			GetComponent<AudioSource>().Play ();
         }
 	}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "EB")
+        {
+            Destroy(collision.collider.gameObject);
+        }
+        
+    }
 }
