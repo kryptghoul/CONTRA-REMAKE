@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8461532666400903701}
   - component: {fileID: 2941358851716493664}
   - component: {fileID: 3983749562172539864}
-  - component: {fileID: 6816999952138823198}
+  - component: {fileID: 2677448067120668230}
   m_Layer: 0
   m_Name: Gunner
   m_TagString: Enemy
@@ -145,18 +145,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiPath: {fileID: 0}
---- !u!114 &6816999952138823198
+--- !u!114 &2677448067120668230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299290130783615611}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33588ba3828fd784ca992dd2e5cb0252, type: 3}
+  m_Script: {fileID: 11500000, guid: dd955ee1f0749da4aa3c783126178ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
 --- !u!1 &5857487658959524018
 GameObject:
   m_ObjectHideFlags: 0

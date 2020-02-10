@@ -18,6 +18,5 @@ public class Explosion : MonoBehaviour
 		{
 			Instantiate(explosion, transform.position, transform.rotation);
 		}
-		Destroy(gameObject);
 	}
 }
